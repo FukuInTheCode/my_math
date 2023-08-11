@@ -1,15 +1,10 @@
 #include "../includes/my.h"
 
 int main(int argc, char *argv[]) {
-    if(argc<2) return 84;
-    double x = atoi(argv[1]);
-    int n = atoi(argv[1])*3; // Number of terms in the Taylor series
+    double a[] = {1, 2};
+    double b[] = {0.5, 0.5};
 
-    double approx = my_ln(x, n);
-    double actual = log(x);
-
-    printf("Approximation: %lf\n", approx);
-    printf("Actual exp: %lf\n", actual);
+    printf("%f", dot_product(a, b, 2));
 
     return 0;
 }
