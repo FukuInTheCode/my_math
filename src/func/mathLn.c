@@ -1,3 +1,5 @@
+#include "../../includes/my.h"
+
 double my_ln(double x, int n) {
     if (x <= 0) {
         // Handle invalid input

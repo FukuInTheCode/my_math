@@ -9,3 +9,4 @@ int my_randInt(int minN, int maxN);
 double my_randFloat(double minN, double maxN);
 unsigned ll my_Factorial(const unsigned int n);
 double my_exp(double x, int n);
+double my_ln(double x, int n);
