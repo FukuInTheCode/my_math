@@ -1,4 +1,4 @@
-NAME = TBD
+NAME = my_math
 
 CFLAGS = -W -Wall -Wextra
 
