@@ -8,4 +8,9 @@
 #include "./my_math.h"
 
 
-#define SWAP(A, B)  double temp = A; A = B; B = temp;
+static inline __attribute__((always_inline)) void swap(double *a, double *b)
+{
+    const int temp = *a;
+    *a = *b;
+    *b = temp;
+}

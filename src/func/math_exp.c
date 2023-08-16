@@ -1,6 +1,7 @@
 #include "../../includes/my.h"
 
-double my_exp(double x, int n) {
+double my_exp(double x, int n)
+{
     double result = 1.0;
     double term = 1.0;
 
