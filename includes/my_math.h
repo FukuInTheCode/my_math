@@ -12,6 +12,14 @@ static inline __attribute__((always_inline)) void swapint(int *a, int *b)
     *b = temp;
 }
 
+static inline __attribute__((always_inline)) void swap(double *a, double *b)
+{
+    const int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+
 double dot_product(double* a, double* b, unsigned int size);
 
 double my_power(double x, unsigned int n);
