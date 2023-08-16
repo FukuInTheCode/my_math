@@ -1,10 +1,9 @@
 #include "../../includes/my.h"
 
-double my_ln(double x, int n) {
-    if (x <= 0) {
-        // Handle invalid input
+double my_ln(double x, int n)
+{
+    if (x <= 0)
         return NAN;
-    }
 
     double result = 0.0;
     double term = (x - 1.0) / (x + 1.0);
