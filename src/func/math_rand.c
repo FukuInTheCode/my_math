@@ -4,7 +4,7 @@ int my_randint(int minN, int maxN)
 {
     maxN++;
     if (minN > maxN)
-        swap(minN, maxN);
+        swapint(&minN, &maxN);
 
     return rand() % (maxN - minN) + minN;
 }
@@ -12,7 +12,7 @@ int my_randint(int minN, int maxN)
 double my_randfloat(double minN, double maxN)
 {
     if ( minN > maxN)
-        swap(minN, maxN);
+        swap(&minN, &maxN);
 
     double range = (maxN - minN);
     double div = RAND_MAX / range;
