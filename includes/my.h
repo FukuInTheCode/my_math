@@ -14,10 +14,3 @@ static inline __attribute__((always_inline)) void swap(double *a, double *b)
     *a = *b;
     *b = temp;
 }
-
-static inline __attribute__((always_inline)) void swapint(int *a, int *b)
-{
-    const int temp = *a;
-    *a = *b;
-    *b = temp;
-}
