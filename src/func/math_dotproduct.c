@@ -1,6 +1,6 @@
 #include "../../includes/my.h"
 
-double dot_product(double* a, double* b, unsigned int size)
+double my_dot_product(double* a, double* b, unsigned int size)
 {
     unsigned int i;
 

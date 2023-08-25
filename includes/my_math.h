@@ -19,8 +19,13 @@ static inline __attribute__((always_inline)) void swap(double *a, double *b)
     *b = temp;
 }
 
+typedef double (*math_function)(double);
 
-double dot_product(double* a, double* b, unsigned int size);
+typedef enum {
+    inf,
+    minus_inf,
+    integer
+} math_func_limit;
 
 double my_power(double x, unsigned int n);
 int my_randint(int minN, int maxN);
