@@ -27,6 +27,16 @@ typedef enum {
     integer
 } math_func_limit;
 
+typedef struct {
+    math_function f;
+    math_func_limit left_type;
+    double left;
+    math_func_limit right_type;
+    double right;
+    size_t n_undef;
+    double *undefined;
+} my_func_t;
+
 double my_power(double x, unsigned int n);
 int my_randint(int minN, int maxN);
 double my_randfloat(double minN, double maxN);
