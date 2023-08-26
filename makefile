@@ -1,4 +1,4 @@
-NAME       = my_plot
+NAME       = my_math
 
 CFLAGS     = -W -Wall -Wextra
 
