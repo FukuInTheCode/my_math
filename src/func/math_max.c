@@ -6,7 +6,7 @@ double my_max(double *x, size_t size)
         return 0.0;
 
     double max = x[0];
-    for (int i = 1; i < size; i++) {
+    for (size_t i = 1; i < size; i++) {
         if (x[i] > max) {
             max = x[i];
         }
