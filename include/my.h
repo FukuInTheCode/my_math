@@ -1,3 +1,10 @@
+/*
+** PERSONAL PROJECT, 2023
+** MY_H
+** File description:
+** Placeholder
+*/
+
 #ifndef MY_H
     #define MY_H
 

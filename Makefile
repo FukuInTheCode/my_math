@@ -5,29 +5,26 @@
 ## Placeholder
 ##
 
-NAME   = my_math
-
-CC	   = gcc
+NAME   = libmy_math.a
 
 CFLAGS = -Wall -Wextra -Wno-unused-value -Wno-sign-compare \
 	-Wno-unused-parameter -I./include
 
 LIBS   = \
 
-SRC	   = \
+SRC	   = src/my_abs.c \
 
 OBJ	   = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@$(CC) $(OBJ) -o $(NAME)
+	@ar -rcs $(NAME) $(OBJ)
 
 clean:
 	@rm -f $(OBJ)
 
 fclean: clean
 	@rm -f $(NAME)
-	@rm -f ../$(NAME)
 
 re: fclean all
